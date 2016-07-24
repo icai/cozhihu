@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Crafts" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 600 200" enable-background="new 0 0 600 200" xml:space="preserve">
+<rect fill="#FF81AC" stroke="#231F20" stroke-miterlimit="10" width="600" height="200"/>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="600" height="200"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		<g>
+			<path fill="none" stroke="#3E59F8" stroke-width="2" stroke-miterlimit="10" d="M63.1,207.2c0,0,0.8-0.4,2.2-1.2"/>
+			<path fill="none" stroke="#3E59F8" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="4.9825,4.9825" d="M69.7,203.7
+				c30.3-15.7,156.1-80,206.4-87.2c55.7-8,168.1,36.5,223.5,26.7c36.7-6.5,120.4-70.7,139.5-85.6"/>
+			<path fill="none" stroke="#3E59F8" stroke-width="2" stroke-miterlimit="10" d="M641,56.1c1.3-1,2-1.5,2-1.5"/>
+		</g>
+	</g>
+	
+		<rect x="28.8" y="-14.2" transform="matrix(0.7071 0.7071 -0.7071 0.7071 20.1999 -33.525)" clip-path="url(#SVGID_2_)" fill="#FF9FD6" width="43.6" height="43.6"/>
+	
+		<rect x="526.1" y="171.9" transform="matrix(0.7071 0.7071 -0.7071 0.7071 297.43 -330.6972)" clip-path="url(#SVGID_2_)" fill="#FF9FD6" width="43.6" height="43.6"/>
+	
+		<rect x="501.9" y="37.1" transform="matrix(0.9509 0.3096 -0.3096 0.9509 43.9578 -159.2178)" clip-path="url(#SVGID_2_)" fill="#FF3642" width="43.6" height="43.6"/>
+	
+		<rect x="83.1" y="85.9" transform="matrix(0.9509 0.3096 -0.3096 0.9509 38.502 -27.1652)" clip-path="url(#SVGID_2_)" fill="#A5FFD3" width="43.6" height="43.6"/>
+	
+		<rect x="246.1" y="171" transform="matrix(-0.6167 0.7872 -0.7872 -0.6167 584.9213 100.8023)" clip-path="url(#SVGID_2_)" fill="#FF3642" width="43.6" height="43.6"/>
+	
+		<rect x="-15.2" y="124.6" transform="matrix(-0.6167 0.7872 -0.7872 -0.6167 125.938 231.4355)" clip-path="url(#SVGID_2_)" fill="#3E59F8" width="43.6" height="43.6"/>
+	
+		<rect x="361.1" y="-22.8" transform="matrix(-0.6167 0.7872 -0.7872 -0.6167 618.2374 -302.969)" clip-path="url(#SVGID_2_)" fill="#3E59F8" width="43.6" height="43.6"/>
+	
+		<rect x="578.2" y="12" transform="matrix(-0.1415 0.9899 -0.9899 -0.1415 718.3304 -555.4221)" clip-path="url(#SVGID_2_)" fill="#A5FFD3" width="43.6" height="43.6"/>
+</g>
+</svg>
