@@ -14,7 +14,8 @@ exclude:
   - Gemfile
   - config.rb
   
-
+include:
+  - .nojekyll
 
 sass:
     style: compressed

@@ -10,7 +10,7 @@ else
   git remote add -t gh-pages origin git@github.com:icai/cozhihu.git
 fi;
 # fetch pages
-git fetch origin gh-pages:gh-pages
+git fetch origin gh-pages:refs/remotes/origin/gh-pages
 git add -A
 NOW=$(date -u '+%F %T %Z')
 git commit -m "update site at $NOW"
