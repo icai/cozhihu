@@ -1,0 +1,237 @@
+body {
+  background-color: #233035;
+  color: #f4f5f5; }
+
+a {
+  color: #bec2c3; }
+
+.zu-top {
+  background: #253238;
+  border-bottom: 1px solid #111719; }
+
+.zu-top-search-input {
+  background-color: #e9ebeb;
+  border: 1px solid #1c262a; }
+
+.zu-top-search-form .zu-top-search-button {
+  background: #304149;
+  border: 1px solid #1c262a; }
+
+.ac-active {
+  background-color: #e9ebeb; }
+
+.zu-top-add-question {
+  background: #304149;
+  border: 1px solid #1c262a; }
+  .zu-top-add-question:active {
+    background: #222e33;
+    border: 1px solid #0e1215; }
+
+.zu-top-nav-li.current {
+  background: #182024; }
+
+.modal-dialog-title {
+  background: #212d32;
+  border: 1px solid #1d272c; }
+
+.zg-btn-blue {
+  background: #32444c;
+  border: 1px solid #232f35; }
+  .zg-btn-blue:active {
+    background: #2c3c43; }
+
+.goog-buttonset-default {
+  background: #32444c;
+  border: 1px solid #232f35; }
+
+.zg-btn-green, .zg-btn-follow {
+  background: #8ab923; }
+
+.zu-top-nav-userinfo.selected, html.no-touchevents .top-nav-profile:hover .zu-top-nav-userinfo {
+  background: #182024; }
+
+html.no-touchevents .top-nav-dropdown a:hover {
+  background-color: #27353b; }
+
+.top-nav-profile a {
+  background-color: #182024; }
+
+.top-nav-dropdown li a {
+  border-top: 1px solid #161d21; }
+
+.ProfileProgress-completeness {
+  background: #394d57; }
+
+.topics-plaza {
+  border: 1px solid #515b60;
+  background: #212d32; }
+
+a.zu-main-feed-fresh-button {
+  border: 1px solid #515b60;
+  background: #212d32; }
+  a.zu-main-feed-fresh-button:hover, a.zu-main-feed-fresh-button:active {
+    border: 1px solid #4d575c;
+    background: #1e292d; }
+
+html.no-touchevents .zm-topic-cat-main li:hover a, .zm-topic-cat-main li.current a {
+  background: #bec2c3;
+  border-color: #bec2c3; }
+
+.zm-side-nav-link.active,
+html.no-touchevents .zm-side-nav-link:hover {
+  color: #bec2c3;
+  background: #eeefef; }
+
+html.no-touchevents .SidebarListNav-itemLink:hover {
+  color: #bec2c3;
+  background: #eeefef; }
+
+#zh-home-list-title {
+  color: #f4f5f5; }
+
+.topic-feed-title {
+  color: #f4f5f5; }
+
+.section-title {
+  color: #f4f5f5; }
+
+.side-title {
+  color: #f4f5f5; }
+
+.page-explore .page-title {
+  color: #f4f5f5; }
+
+.zm-topic-cat-title h2 {
+  color: #f4f5f5; }
+
+.side-topic-item {
+  background-color: #253238; }
+
+.zg-icon-feedlist {
+  -webkit-filter: invert(100%); }
+
+.zu-main-feed-con {
+  border-top: 1px solid #1e282d; }
+
+.feed-item + .feed-item {
+  border-top: 1px solid #1e282d; }
+
+.zm-side-nav-group + .zm-side-nav-group {
+  border-top: 1px solid #1e282d; }
+
+.SidebarSection {
+  border-top: 1px solid #1e282d; }
+
+.ProfileCard {
+  border: 1px solid #1e282d;
+  box-shadow: 0 1px 0 #1e282d; }
+
+.zm-profile-section-wrap {
+  border: 1px solid #1e282d;
+  box-shadow: 0 1px 0 #1e282d; }
+
+.zm-profile-section-head {
+  border-bottom: 1px solid #1e282d; }
+
+.profile-navbar {
+  background-color: #303c42;
+  border-top: 1px solid #1e282d;
+  box-shadow: 0 2px 2px #1e282d inset; }
+
+.profile-navbar .item {
+  color: #e9ebeb; }
+
+.profile-navbar .item.home {
+  border-right: 1px solid #1e282d; }
+
+.profile-navbar .item.active {
+  background-color: #303c42;
+  border: solid #1e282d;
+  border-width: 0 1px;
+  box-shadow: 0 2px 2px #1e282d inset; }
+
+.profile-navbar .item.home.active {
+  border-color: #1e282d; }
+
+.zm-profile-section-grid .item {
+  border-right: 1px dotted #1e282d;
+  border-bottom: 1px dotted #1e282d; }
+
+.zm-profile-section-item + .zm-profile-section-item {
+  border-top: 1px dotted #1e282d; }
+
+.topic-item + .topic-item {
+  border-top: 1px solid #1e282d; }
+
+.explore-side-section .list > li + li {
+  border-top: 1px solid #1e282d; }
+
+.ProfileEditCard-item {
+  border-bottom: 1px solid #1e282d; }
+
+.zm-side-section + .zm-side-section > .zm-side-section-inner {
+  border-top: 1px solid #1e282d; }
+
+.zu-noti7-all .category + .category {
+  border-top: 1px dotted #1e282d; }
+
+.zm-noti7-content-body .zm-noti7-content-item.unread {
+  background: #212d32; }
+
+.zu-noti7-all .zm-noti7-content-item + .zm-noti7-content-item {
+  border-top: 1px dotted #1e282d; }
+
+.zm-item-tag, .zm-tag-editor-edit-item {
+  background-color: #13191c; }
+
+html.no-touchevents .zh-summary:hover a.toggle-expand {
+  background: #eeefef;
+  color: #13191c; }
+
+.item-collapse.is-sticky {
+  background: #9da3a5; }
+
+.zm-votebar .up,
+.zm-votebar .down {
+  background: #364248;
+  color: #92999c; }
+
+.zm-votebar .up .vote-arrow {
+  border-bottom-color: #92999c; }
+
+.zm-votebar .down .vote-arrow {
+  border-top-color: #92999c; }
+
+html.no-touchevents .zm-votebar .up:hover,
+html.no-touchevents .zm-votebar .down:hover,
+.zm-votebar .up.pressed,
+.zm-votebar .down.pressed {
+  background: #92999c; }
+
+.zm-item-vote-count {
+  background: #364248;
+  color: #92999c; }
+
+html.no-touchevents .zm-item-vote-count:hover {
+  background: #92999c; }
+
+.Link--light {
+  color: #92999c; }
+
+.topic-item-title-link {
+  color: #f4f5f5; }
+
+.zm-profile-header-main .name, .zm-profile-header-main .name:visited {
+  color: #f4f5f5; }
+
+.zu-top-nav-live-inner {
+  background: #253238;
+  color: #f4f5f5; }
+
+.zu-noti7-popup .zu-top-live-icon {
+  -webkit-filter: invert(18%); }
+
+.zg-info-message,
+.zg-error-message,
+.zg-warn-message {
+  color: #222; }

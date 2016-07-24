@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css" media="all">
+    html {
+        font-family: sans-serif;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        background-attachment: fixed;
+    }
+
+    body {
+        margin: 0;
+    }
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin:0;
+    }
+
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
+    }
+    td,
+    th {
+      padding: 0;
+    }
+
+
+	*:before, *:after {
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	}
+
+    body {
+	    color: #555;
+	    font-size: 15px;
+	    line-height: 1.7;
+	    font-family: 'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;
+	    background: #f7fafc;
+	    -webkit-font-smoothing: subpixel-antialiased;
+
+    }
+    html,body {
+        height: 100%;
+    }
+    .text-right {
+        text-align: right;
+    }
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+	    width: 580px;
+	    padding-top: 60px;
+    }
+    .panel {
+        margin-bottom: 20px;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.05);
+    }
+    
+    .panel-body {
+        padding: 15px;
+    }
+    
+    .panel-heading {
+        padding: 10px 15px;
+        border-bottom: 1px solid transparent;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+    
+    .panel-default {
+        border-color: #ddd;
+    }
+    
+    .panel-default > .panel-heading {
+        color: #333;
+        background-color: transparent;
+        border-color: #ddd;
+	    line-height: 1.7;
+	    font-weight: 400;
+	    font-size: 18px;
+
+    }
+    
+    .panel-footer {
+        padding: 10px 15px;
+        background-color: transparent;
+        border-top: 1px solid #ddd;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+    
+    .form-horizontal {
+        padding: 25px 15px 15px;
+        border: 1px solid #ddd;
+        position: relative;
+    }
+    
+
+    
+    fieldset {
+        padding: .35em .625em .75em;
+        margin: 0 2px;
+        border: 1px solid #c0c0c0;
+    }
+    
+    legend {
+        padding: 0;
+        border: 0;
+    }
+
+    legend {
+        position: absolute;
+        top: -10px;
+        background: #f7fafc;
+        border: 1px solid #ddd;
+        padding: 0px 5px;
+        border-bottom: none;
+        border-top: none;
+    }
+    
+    hr {
+    	height: 0;
+        border: none;
+        border-bottom: 1px solid #bbb;
+        margin: 15px 0px;
+    }
+    
+    .form-group {}
+    
+    .checkbox {}
+    
+    .checkbox input[type=checkbox] {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 4px 0 0;
+        line-height: normal;
+        position: absolute;
+        margin-top: 4px\9;
+        margin-left: -20px;
+    }
+    
+    .checkbox label,
+    .radio label {
+        min-height: 20px;
+        padding-left: 20px;
+        margin-bottom: 0;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    
+    #particles {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .table {
+        border-collapse: collapse !important;
+        width: 100%;
+        text-align: center;
+
+    }
+    .table td,
+    .table th {
+        padding: 3px;
+        line-height: 1.42857143;
+        vertical-align: middle;
+        font-weight: normal;
+        /*border-top: 1px solid #ddd;*/
+        /*border: 1px solid #ddd !important;*/
+    }
+    .pull-left{
+        float: left;
+    }
+    </style>
+</head>
+
+<body>
+<div class="" id="wrapper">
+    <div class="container">
+        <div class="panel panel-default">
+            <h1 class="panel-heading">
+                <var id="extName"></var>
+            </h1>
+            <div class="panel-body">
+                <div class="panel">
+                    <form action="" method="POST" class="form-horizontal" role="form">
+                        <legend>Setting</legend>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" id="usetextshadow" value="">
+                                    <var id="textShadow"></var>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" id="disablerotation" value="">
+                                    <var id="rotateanimate"></var>
+                                </label>
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+                <hr>
+                <h4><var id="aboutAuthor"></var></h4>
+                <p><var id="blog"></var>: <a href="https://blog.w3cub.com"  target="_blank" >泛前端开发</a>, <var id="weibo"></var>: <a href="http://weibo.com/328765211" target="_blank">@木沐雨点</a>, Facebook: <a href="https://www.facebook.com/terry.cai.7921" target="_blank" title="">Terry Cai</a>, Github: <a href="https://github.com/icai/" target="_blank" title="">icai</a>, <a href="https://www.zhihu.com/people/ctkjer" title="">知乎</a></p>
+                <h4><var id="feedback"></var></h4>
+                <p><var id="open"></var><a href="http://cozhihu.w3cub.com/" target="_blank"><var id="offcial"></var></a>, <a href="" id="chromestoreurl"><var id="chromestore"></var></a>, <var id="gotomy"></var></p>
+                <hr>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>
+                                <var id="donate"></var>
+                            </th>
+                            
+                            <td>
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" style="width: 150px;height: 51px;">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                                    <input type="image" src="/images/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/zh_XC/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+                            </td>
+                            <td>
+                                <img src="/images/alipay-qcard.jpg" width="150" alt="" style="margin-bottom: -12px;">
+                            </td>
+                            <td>
+                               <img src="/images/wechat-qcard.png" width="155" alt="">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="panel-footer">
+                <div class="pull-left"><small><var id="countrn"></var><span id="rendercount">0</span><var id="times"></var> ver:<var id="version"></var></small></div><div class="text-right">Copyright &copy; 2016</div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="vendor/particles.js" type="text/javascript"></script>
+    <script src="options/options.js" type="text/javascript"></script>
+</body>
+
+</html>

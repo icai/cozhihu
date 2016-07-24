@@ -1,0 +1,316 @@
+body{
+    background-color: mix(black, $base-color, 5%);
+    color: $base-font-color;
+}
+
+a {
+    color: $anchor-color;
+}
+
+
+.zu-top {
+    background: $base-color;
+    border-bottom: 1px solid darken($base-color, 10%);
+}
+
+.zu-top-search-input {
+    background-color: mix(white, $base-color, 90%);
+    border: 1px solid $top-btn-border;
+}
+
+.zu-top-search-form .zu-top-search-button {
+    background: $top-btn-color;
+    border: 1px solid $top-btn-border;
+}
+
+.ac-active{
+    background-color: mix(white, $base-color, 90%);
+}
+
+.zu-top-add-question{
+    background: $top-btn-color;
+    border: 1px solid $top-btn-border;
+    &:active {
+       background: $top-btn-color-active; 
+       border: 1px solid $top-btn-border-active;
+    }
+}
+
+
+.zu-top-nav-li.current{
+	background: $top-nav-current;
+}
+
+.modal-dialog-title {
+	background: $modal-title;
+    border: 1px solid $modal-title-border;
+}
+
+
+.zg-btn-blue{
+    background: $primary-btn-color;
+    border: 1px solid $primary-btn-border;	
+    &:active{
+         background: darken($primary-btn-color, 3%);
+    }
+}
+
+.goog-buttonset-default{
+    background: $primary-btn-color;
+    border: 1px solid $primary-btn-border;
+}
+
+.zg-btn-green, .zg-btn-follow{
+	background: $follow-btn;
+}
+
+
+
+
+.zu-top-nav-userinfo.selected, html.no-touchevents .top-nav-profile:hover .zu-top-nav-userinfo {
+    background: $top-dropdown-color;
+}
+
+html.no-touchevents .top-nav-dropdown a:hover {
+    background-color: $top-dropdown-hover;
+}
+
+.top-nav-profile a {
+    background-color: $top-dropdown-color;
+}
+
+.top-nav-dropdown li a {
+    border-top: 1px solid $top-dropdown-border;
+}
+
+.ProfileProgress-completeness {
+    background: $profile-progress-bar;
+}
+
+.topics-plaza {
+    border: 1px solid $topics-plaza-border;
+    background: $topics-plaza-bg;
+}
+
+
+a.zu-main-feed-fresh-button{
+    border: 1px solid $topics-plaza-border;
+    background: $topics-plaza-bg;
+    &:hover,&:active{
+        border: 1px solid darken($topics-plaza-border, 1.5%);
+        background: darken($topics-plaza-bg, 1.5%);  
+    }
+}
+
+
+html.no-touchevents .zm-topic-cat-main li:hover a, .zm-topic-cat-main li.current a {
+    background: $topic-cat-color;
+    border-color: $topic-cat-color;
+}
+
+
+.zm-side-nav-link.active, 
+html.no-touchevents .zm-side-nav-link:hover{
+    color: $anchor-color;
+    background: mix(white, $base-color, 92%);
+}
+
+html.no-touchevents .SidebarListNav-itemLink:hover{
+    color: $anchor-color;
+    background: mix(white, $base-color, 92%);
+}
+
+#zh-home-list-title{
+    color: $base-font-color;
+}
+
+.topic-feed-title{
+    color: $base-font-color;
+}
+.section-title{
+    color: $base-font-color;
+}
+.side-title{
+    color: $base-font-color;
+}
+.page-explore .page-title{
+    color: $base-font-color;
+}
+
+.zm-topic-cat-title h2{
+    color: $base-font-color;
+}
+
+.side-topic-item{
+    background-color: $side-topic-bg;
+}
+
+.zg-icon-feedlist{
+    -webkit-filter: invert(100%);
+}
+
+.zu-main-feed-con {
+    border-top: 1px solid $split-line-color;
+}
+
+.feed-item+.feed-item {
+    border-top: 1px solid $split-line-color;
+}
+
+.zm-side-nav-group+.zm-side-nav-group {
+    border-top: 1px solid $split-line-color;
+}
+
+.SidebarSection{
+    border-top: 1px solid $split-line-color;
+}
+
+.ProfileCard{
+    border: 1px solid $split-line-color;
+    box-shadow: 0 1px 0 $split-line-color;
+}
+
+.zm-profile-section-wrap{
+    border: 1px solid $split-line-color;
+    box-shadow: 0 1px 0 $split-line-color;
+}
+
+.zm-profile-section-head{
+    border-bottom: 1px solid $split-line-color;
+}
+
+.profile-navbar{
+    background-color: $base-color2;
+    border-top: 1px solid $split-line-color;
+    box-shadow: 0 2px 2px $split-line-color inset;
+}
+
+.profile-navbar .item{
+    color: mix(white, $base-color, 90%)
+}
+
+.profile-navbar .item.home {
+    border-right: 1px solid $split-line-color;
+}
+
+.profile-navbar .item.active{
+    background-color: $base-color2;
+    border: solid $split-line-color;
+    border-width: 0 1px;
+    box-shadow: 0 2px 2px $split-line-color inset;
+}
+
+.profile-navbar .item.home.active {
+    border-color: $split-line-color;
+}
+
+.zm-profile-section-grid .item {
+    border-right: 1px dotted $split-line-color;
+    border-bottom: 1px dotted $split-line-color;
+}
+
+.zm-profile-section-item+.zm-profile-section-item {
+    border-top: 1px dotted $split-line-color;
+}
+
+.topic-item+.topic-item {
+    border-top: 1px solid $split-line-color;
+}
+
+.explore-side-section .list>li+li {
+    border-top: 1px solid $split-line-color;
+}
+
+.ProfileEditCard-item{
+    border-bottom: 1px solid $split-line-color;
+}
+
+.zm-side-section+.zm-side-section>.zm-side-section-inner {
+    border-top: 1px solid $split-line-color;
+}
+
+.zu-noti7-all .category+.category {
+    border-top: 1px dotted $split-line-color;
+}
+
+.zm-noti7-content-body .zm-noti7-content-item.unread {
+    background: mix(black, $base-color, 10%);
+    // border-bottom: 1px solid #d1e0e8;
+}
+
+.zu-noti7-all .zm-noti7-content-item+.zm-noti7-content-item {
+    border-top: 1px dotted $split-line-color;
+}
+
+.zm-item-tag, .zm-tag-editor-edit-item{
+    background-color: mix(black, $base-color, 50%);
+}
+
+
+html.no-touchevents .zh-summary:hover a.toggle-expand{
+    background: mix(white, $base-color, 92%);
+    color: mix(black, $base-color, 50%);
+}
+
+.item-collapse.is-sticky{
+    background: mix(white, $base-color, 55%);
+}
+
+
+.zm-votebar .up, 
+.zm-votebar .down {
+    background: mix(white, $base-color, 8%);
+    color: mix(white, $base-color, 50%);
+}
+
+.zm-votebar .up .vote-arrow{
+    border-bottom-color: mix(white, $base-color, 50%);
+}
+.zm-votebar .down .vote-arrow{
+    border-top-color: mix(white, $base-color, 50%);
+}
+
+html.no-touchevents .zm-votebar .up:hover,
+html.no-touchevents .zm-votebar .down:hover,
+.zm-votebar .up.pressed, 
+.zm-votebar .down.pressed{
+    background: mix(white, $base-color, 50%);
+}
+
+.zm-item-vote-count{
+    background: mix(white, $base-color, 8%);
+    color: mix(white, $base-color, 50%);
+}
+
+html.no-touchevents .zm-item-vote-count:hover{
+    background: mix(white, $base-color, 50%);
+}
+
+.Link--light{
+    color: mix(white, $base-color, 50%);
+}
+
+.topic-item-title-link{
+    color: $base-font-color;
+}
+
+.zm-profile-header-main .name, .zm-profile-header-main .name:visited {
+    color: $base-font-color;
+}
+
+.zu-top-nav-live-inner {
+    background: $base-color;
+    color: $base-font-color;
+}
+
+.zu-noti7-popup .zu-top-live-icon{
+    -webkit-filter: invert(18%);
+}
+
+.zg-info-message,
+.zg-error-message,
+.zg-warn-message {
+    color: #222;
+}
+
+

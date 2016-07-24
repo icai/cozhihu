@@ -1,0 +1,110 @@
+---
+layout: home
+title: Cozhihu(多彩知乎) - A chrome extension for zhifu skins
+slug: home
+---
+
+<main class="jumbotron" id="bg_jumbotron" role="main">
+  <div class="container text-center">
+    <h1>Cozhihu</h1>
+    <script>
+     var colors = ["3F5D7D", "4D4DFF", "008AB8", "67C8FF", "95CAE4", "279B61",
+        "1C7B42", "78D865", "E91E63", "FFCC33", "C1C11A"
+    ];
+    function randomNoRepeats(array) {
+        var copy = array.slice(0);
+        return function() {
+            if (copy.length < 1) { copy = array.slice(0); }
+            var index = Math.floor(Math.random() * copy.length);
+            var item = copy[index];
+            copy.splice(index, 1);
+            return item;
+        };
+    };
+    function randomTitleCharactorsColor(colorLists) {
+        var titleH1 = document.getElementsByTagName("h1")[0],
+            title = titleH1.innerHTML;
+        var choseColor = randomNoRepeats(colorLists);
+        title = title.split("").map(function(item) {
+            return '<span style="color:#' + choseColor() + ';">' + item + '</span>';
+        }).join("");
+        titleH1.innerHTML = title;
+    };
+    randomTitleCharactorsColor(colors);
+    </script>
+    <p class="lead">
+      A chrome extension for zhifu skins
+    </p>
+    <p>
+      <a href="" class="btn btn-outline-inverse btn-lg install-app">
+        Add Cozhihu to chrome
+      </a>
+    </p>
+    <p class="version">
+      Currently {{site.extversion}}</a>
+    </p>
+  </div>
+</main>
+{% include notice-previous.html %}
+
+<div class="container">
+  <section id="lead" class="lead">
+    Cozhihu gives you a customizable and colorful skins, and which some of them are night mode.
+  </section>
+
+  <hr class="half-rule">
+
+  <div class="cozh-page-featurette">
+    <div class="row">
+      <div class="col-sm-4 feature-item item">
+        <i class="fa fa-language"></i>
+        <h4>Language support</h4>
+        <p>
+          Cozhihu comes with support for 3 languages</a> built-in.
+        </p>
+      </div>
+
+      <div class="col-sm-4 feature-item">
+        <i class="fa fa-database"></i>
+        <h4>No tracking data</h4>
+        <p>
+          we don't tracking any user using website private data, protect your privacy.
+        </p>
+      </div>
+
+      <div class="col-sm-4 feature-item">
+        <i class="fa fa-paint-brush"></i>
+        <h4>Multiple themes</h4>
+        <p>
+          Fully skinnable, over 25  themes for you to choose</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4 feature-item">
+        <i class="fa fa-plug"></i>
+        <h4>Fully extensible</h4>
+        <p>
+         Use sass to write the css, customize color make more faster. 
+        </p>
+      </div>
+
+      <div class="col-sm-4 feature-item">
+        <i class="fa fa-tag"></i>
+        <h4>Dynamic preview</h4>
+        <p>
+          Allow users hover the color panel to preview.
+        </p>
+      </div>
+
+      <div class="col-sm-4 feature-item">
+        <i class="fa fa-html5"></i>
+        <h4>Browser support</h4>
+        <p>Support for all chrome-like browser.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="vendor/js/particles.js"></script>
+<script src="js/home.js"></script>

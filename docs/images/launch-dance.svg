@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Dance" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 600 200" enable-background="new 0 0 600 200" xml:space="preserve">
+<rect fill="#A695F9" stroke="#231F20" stroke-miterlimit="10" width="600" height="200"/>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="600" height="200"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M224.7,22.9c8.4,8.4-5.7,22.5,2.7,30.9
+			c8.4,8.4,22.5-5.7,30.9,2.7c8.4,8.4-5.7,22.5,2.7,30.9c8.4,8.4,22.5-5.7,30.9,2.7c8.4,8.4-5.7,22.5,2.7,30.9"/>
+	</g>
+	<g clip-path="url(#SVGID_2_)">
+		<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M512.6,85.7c11.4,3.2,6,22.5,17.5,25.7
+			c11.4,3.2,16.8-16,28.3-12.8c11.4,3.2,6,22.5,17.5,25.7c11.4,3.2,16.8-16,28.3-12.8c11.4,3.2,6,22.5,17.5,25.7"/>
+	</g>
+	<g clip-path="url(#SVGID_2_)">
+		<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M115.9-43.1c-6.1,10.2-23.3-0.1-29.4,10.1
+			c-6.1,10.2,11.1,20.5,5,30.7C85.5,7.9,68.3-2.3,62.2,7.8c-6.1,10.2,11.1,20.5,5,30.7s-23.3-0.1-29.4,10.1"/>
+	</g>
+	<g clip-path="url(#SVGID_2_)">
+		<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M439.3,139.6c-6.1,10.2-23.3-0.1-29.4,10.1
+			c-6.1,10.2,11.1,20.5,5,30.7c-6.1,10.2-23.3-0.1-29.4,10.1c-6.1,10.2,11.1,20.5,5,30.7c-6.1,10.2-23.3-0.1-29.4,10.1"/>
+	</g>
+	<g clip-path="url(#SVGID_2_)">
+		<circle fill="#2BDE73" cx="113.3" cy="258" r="168.3"/>
+	</g>
+	<circle clip-path="url(#SVGID_2_)" fill="#2BDE73" cx="478.8" cy="-15.8" r="78.5"/>
+</g>
+</svg>

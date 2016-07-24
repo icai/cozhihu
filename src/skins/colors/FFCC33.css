@@ -1,0 +1,116 @@
+a {
+  color: #ffbf00; }
+
+.zu-top {
+  background: #FFCC33;
+  border-bottom: 1px solid #ffbf00; }
+
+.zu-top-search-input {
+  background-color: #fffaeb;
+  border: 1px solid #ffc61c; }
+
+.zu-top-search-form .zu-top-search-button {
+  background: #ffd34f;
+  border: 1px solid #ffc61c; }
+
+.ac-active {
+  background-color: #fffaeb; }
+
+.zu-top-add-question {
+  background: #ffd34f;
+  border: 1px solid #ffc61c; }
+  .zu-top-add-question:active {
+    background: #ffca2b;
+    border: 1px solid #f7ba00; }
+
+.zu-top-nav-li.current {
+  background: #ffc412; }
+
+.modal-dialog-title {
+  background: #ffc929;
+  border: 1px solid #ffc71f; }
+
+.zg-btn-blue {
+  background: #ffd454;
+  border: 1px solid #ffcb2e; }
+  .zg-btn-blue:active {
+    background: #ffd045; }
+
+.goog-buttonset-default {
+  background: #ffd454;
+  border: 1px solid #ffcb2e; }
+
+.zg-btn-green, .zg-btn-follow {
+  background: #8ab923; }
+
+.zu-top-nav-userinfo.selected, html.no-touchevents .top-nav-profile:hover .zu-top-nav-userinfo {
+  background: #ffc412; }
+
+html.no-touchevents .top-nav-dropdown a:hover {
+  background-color: #ffcd38; }
+
+.top-nav-profile a {
+  background-color: #ffc412; }
+
+.top-nav-dropdown li a {
+  border-top: 1px solid #ffc20d; }
+
+.ProfileProgress-completeness {
+  background: #ffd966; }
+
+.topics-plaza {
+  border: 1px solid #ffebad;
+  background: #fffcf5; }
+
+a.zu-main-feed-fresh-button {
+  border: 1px solid #ffebad;
+  background: #fffcf5; }
+  a.zu-main-feed-fresh-button:hover, a.zu-main-feed-fresh-button:active {
+    border: 1px solid #ffe9a5;
+    background: #fffaed; }
+
+html.no-touchevents .zm-topic-cat-main li:hover a, .zm-topic-cat-main li.current a {
+  background: #ffbf00;
+  border-color: #ffbf00; }
+
+.zm-side-nav-link.active,
+html.no-touchevents .zm-side-nav-link:hover {
+  color: #ffbf00;
+  background: #fffbef; }
+
+html.no-touchevents .SidebarListNav-itemLink:hover {
+  color: #ffbf00;
+  background: #fffbef; }
+
+html.no-touchevents .zh-summary:hover a.toggle-expand {
+  background: #fffbef; }
+
+.item-collapse.is-sticky {
+  background: #ffe8a3; }
+
+.zm-votebar .up,
+.zm-votebar .down {
+  background: #fffbef;
+  color: #ffe699; }
+
+.zm-votebar .up .vote-arrow {
+  border-bottom-color: #ffe699; }
+
+.zm-votebar .down .vote-arrow {
+  border-top-color: #ffe699; }
+
+html.no-touchevents .zm-votebar .up:hover,
+html.no-touchevents .zm-votebar .down:hover,
+.zm-votebar .up.pressed,
+.zm-votebar .down.pressed {
+  background: #ffe699; }
+
+.zm-item-vote-count {
+  background: #fffbef;
+  color: #ffe699; }
+
+html.no-touchevents .zm-item-vote-count:hover {
+  background: #ffe699; }
+
+.Link--light {
+  color: #ffe699; }

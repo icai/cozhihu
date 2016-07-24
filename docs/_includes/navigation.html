@@ -1,0 +1,55 @@
+<header class="cozh-page-nav navbar navbar-default navbar-static-top" id="top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".select2-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <a href="./" class="navbar-brand"><img src="/images/114.png" height="20px"> Cozhifu</a>
+    </div>
+
+    <nav class="collapse navbar-collapse select2-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li{% if page.slug == "help" %} class="active"{% endif %}>
+          <a href="./help.html">Help</a>
+        </li>
+        <li{% if page.slug == "donate" %} class="active"{% endif %}>
+          <a href="./donate.html">Donate</a>
+        </li>
+        <li class="dropdown{% if (page.slug == "blackboard" or page.slug == "release") %} active{% endif %}">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            Topics
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li{% if page.slug == "blackboard" %} class="active"{% endif %}>
+              <a href="./blackboard.html">Blackboard</a>
+            </li>
+            <li class="divider"></li>
+            <li {% if page.slug == "release" %} class="active"{% endif %}>
+              <a href="./release.html">
+                Release notes
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li{% if page.slug == "community" %} class="active"{% endif %}>
+          <a href="./community.html">Community</a>
+        </li>
+        <li{% if page.slug == "custom" %} class="active"{% endif %}>
+          <a href="./custom.html">Custom Service</a>
+        </li>
+        
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+
+        <a href="https://chrome.google.com/webstore/detail/{{site.APPID}}" onclick="ga('send', 'event', 'Social Click', 'Chrome Store')" target="_blank" class="chrome-store" style="padding: 2px 15px;"><span class="small">Available on the</span><br>Chrome Web Store</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

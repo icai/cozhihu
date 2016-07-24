@@ -1,0 +1,60 @@
+{
+   "extDesc": {
+      "message": "修改你的知乎网页配色"
+   },
+   "extName": {
+      "message": "多彩知乎"
+   },
+   "textShadow":{
+   	"message": "使用文字阴影"
+   },
+   "rotateanimate": {
+      "message": "禁用对焦页面动画"
+   },
+   "options": {
+   	"message": "选项"
+   },
+   "openZhihuTab":{
+       "message": "打开知乎网页"
+   },
+   "openZhihuQuestion":{
+       "message": "回答问题 - 知乎"
+   },
+   "openZhuanlanWriteTab":{
+       "message": "写文章 - 知乎专栏"
+   }, 
+   "aboutAuthor": {
+      "message": "关于作者"
+   },
+   "feedback": {
+      "message": "意见反馈"
+   },
+   "blog": {
+      "message": "博客"
+   },
+   "offcial": {
+      "message": "插件官网"
+   },
+   "chromestore": {
+      "message": "应用商城"
+   },
+   "weibo": {
+      "message": "新浪微博"
+   },
+   "open": {
+      "message": "打开"
+   },
+   "donate": {
+      "message": "捐赠: "
+   },
+   "gotomy":{
+      "message": "或到我的博客，微博留言。"
+   },
+   "countrn": {
+      "message": "统计: 已经渲染"
+   },
+   "times": {
+      "message": "次"
+   }
+
+}

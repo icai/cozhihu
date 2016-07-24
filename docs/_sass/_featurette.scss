@@ -1,0 +1,36 @@
+// Homepage featurettes
+
+.cozh-page-featurette {
+  color: #777;
+  padding: 15px 0;
+  text-align: center;
+
+  h4 {
+    margin: 30px 0 15px;
+    font-size: 24px;
+    // font-size: 22px;
+    font-weight: 300;
+    // text-transform: uppercase;
+  }
+  h4 + p{
+    margin-bottom: 20px; 
+    font-size: 16px;
+    font-weight: 100;
+  }
+
+  .fa {
+    font-size: 40px;
+    // color:#454f86;
+    color: #337ab7;
+  }
+  .feature-item{
+    color:#337ab7;
+    &:hover{
+      color: #23527c;
+      .fa{
+        color: inherit;
+      }
+    }
+
+  }
+}

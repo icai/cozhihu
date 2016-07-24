@@ -1,0 +1,76 @@
+--- 
+layout: default
+title: Blackboard - Cozhihu
+slug: blackboard
+---
+
+<section id="pre-release" class="jumbotron jumbotron-blackboard">
+    <div class="container">
+        <h1>Blackboard</h1>
+        <p class="lead">
+          Cozhihu has an active community that enjoys helping each other out.
+        </p>
+    </div>
+</section>
+<div class="container cozh-page-container">
+    <div class="timeline">
+    {% assign sorted = (site.data.blackboard | sort: 'date') | reverse %}
+    {% assign countevent = 0 %}
+    {% for post in sorted %}
+      {% assign currentdate = post.date | date: "%B %Y" %}
+      {% unless forloop.first %} 
+        {% if currentdate != date %}
+          <div class="timeline__divider timeline__divider--month">
+              <div class="timeline__divider_content">
+                  <time class="js-adjust-time" data-format="MMM YYYY" datetime="{{ date | datetime | date_to_xmlschema }}">{{date | date: "%b %Y"}}</time>
+              </div>
+          </div>
+        {% endif %}
+      {% endunless %}
+      {% assign date = currentdate %}
+      {%if post.event %}
+       <div class="timeline__divider timeline__divider--successful">
+            <div class="timeline__divider_content">
+                <div class="h5 bold mb1">
+                    <time class="js-adjust-time" data-format="LL" datetime="{{ post.date | datetime | date_to_xmlschema }}">{{post.date | date: "%B %d, %Y"}}</time>
+                </div>
+                <div class="h3">
+                    {{ post.title }}
+                </div>
+            </div>
+        </div>
+        {% assign countevent = countevent | plus:1 %}
+      {% else %}
+        {% assign mod = forloop.index | minus:{{countevent}} | modulo: 2 %}
+        <div class="timeline__item timeline__item--{% if mod == 0 %}right{% else %}left{% endif %}">
+            <div class="grid-post link">
+                <p class="grid-post__date">
+                    <time class="js-adjust-time" data-format="LL" datetime="{{ post.date | datetime | date_to_xmlschema }}">{{post.date | date: "%B %d, %Y"}}</time>
+                </p>
+                <h2 class="grid-post__title">{{ post.title }}</h2>
+                <div class="grid-post__content">
+                    <p>{{ post.content }} 
+                      <!-- <u class="nowrap">Read more</u> -->
+                    </p>
+                </div>
+                <!-- <div class="grid-post__metadata">
+                    <span>6 likes</span>
+                </div> -->
+            </div>
+        </div>
+      {% endif %}
+      {% if forloop.last %}
+        <div class="timeline__divider timeline__divider--launched timeline__divider--launched--technology">
+            <div class="timeline__divider_content">
+                <div class="h5 bold mb1">
+                    <time class="js-adjust-time" data-format="LL" datetime="{{date | datetime | date_to_xmlschema }}">{{date | date: "%B %d %Y"}}</time>
+                </div>
+                <div class="h2">
+                    Project launched
+                </div>
+            </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+    </div>
+</div>

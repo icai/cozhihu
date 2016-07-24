@@ -1,0 +1,47 @@
+$base-color: #0767c8 !default;
+$base-font-color: mix(white, $base-color, 95%) !default;
+$base-color2: mix(white, $base-color, 5%) !default;
+$anchor-color: mix(white, $base-color, 70%) !default;
+
+
+$split-line-color: mix(black, $base-color, 20%)!default;
+$split-section-color: mix(black, $base-color, 90%)!default;
+
+$body-bgcolor: $base-color;
+
+$top-btn-color:  lighten($base-color, 5.5%) !default;
+
+$top-btn-border: darken($top-btn-color, 10%) !default;
+
+$top-btn-border-active: darken($top-btn-border, 7%) !default;
+$top-btn-color-active: darken($top-btn-color, 7%) !default;
+
+$top-nav-current: darken($base-color, 6.5%) !default;
+
+$top-dropdown-color: darken($base-color, 6.5%) !default;
+$top-dropdown-border: darken($base-color, 7.5%) !default;
+$top-dropdown-hover: lighten($top-dropdown-color, 7.5%) !default;
+
+$primary-btn-color:  lighten($base-color, 6.5%) !default;
+$primary-btn-border:  darken($primary-btn-color, 7.5%) !default;
+
+$follow-btn: #8ab923 !default;
+
+$topic-plaza-bg: lighten($base-color, 80%) !default;
+$topic-plaza-border: lighten($base-color, 70%) !default;
+
+
+
+$topic-cat-color: $anchor-color !default;
+
+
+$topics-plaza-bg: mix(black, $base-color, 10%) !default;
+$topics-plaza-border: mix(white, $base-color, 20%) !default;
+
+$side-topic-bg: $base-color !default;
+
+$profile-progress-bar: lighten($base-color, 10%) !default;
+
+
+$modal-title: darken($base-color, 2%) !default;
+$modal-title-border: darken($base-color, 4%) !default;

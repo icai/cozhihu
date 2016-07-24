@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include navigation.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    <script>
+      (function ($) {
+        'use strict';
+
+        $(function () {
+          var $window = $(window);
+          var $body = $(document.body);
+          var $sidebar = $('.cozh-page-sidebar');
+
+          $body.scrollspy({
+            target: '.cozh-page-sidebar',
+            offset: 40
+          });
+
+          $window.on('load', function () {
+            $body.scrollspy('refresh');
+          });
+
+          $sidebar.affix({
+            offset: {
+              top: function () {
+                var offsetTop = $sidebar.offset().top;
+                var navOuterHeight = $('.cozh-page-nav').height();
+
+                return (this.top = offsetTop - navOuterHeight);
+              },
+              bottom: function () {
+                return (this.bottom = $('.cozh-page-footer').outerHeight(true));
+              }
+            }
+          });
+        });
+      })(jQuery);
+
+      (function () {
+        'use strict';
+
+        anchors.options.placement = 'left';
+        anchors.add('.cozh-page-container h1, .cozh-page-container h2, .cozh-page-container h3, .cozh-page-container h4, .cozh-page-container h5');
+      })();
+    </script>
+
+    {% include ga.html %}
+  </body>
+</html>

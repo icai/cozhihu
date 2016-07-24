@@ -1,0 +1,8 @@
+.donate-table{
+	text-align: center;
+	border-left-width: 6px;
+    border-right-width: 2px;
+    &>tbody>tr>td{
+    	vertical-align: middle;
+    }
+}

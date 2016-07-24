@@ -1,0 +1,60 @@
+{
+    "extDesc": {
+        "message": "修改你的知乎網頁配色"
+    },
+    "extName": {
+        "message": "多彩知乎"
+    },
+    "textShadow": {
+        "message": "使用文字陰影"
+    },
+    "rotateanimate": {
+        "message": "禁用對焦頁面動畫"
+    },
+    "options": {
+        "message": "選項"
+    },
+    "openZhihuTab": {
+    	"message": "打開知乎網頁"
+    },
+   "openZhihuQuestion":{
+       "message": "回答問題 - 知乎"
+   },
+    "openZhuanlanWriteTab": {
+        "message": "寫文章 - 知乎專欄"
+    },
+    "aboutAuthor": {
+        "message": "關於作者"
+    },
+    "feedback": {
+        "message": "意見反饋"
+    },
+    "blog": {
+        "message": "博客"
+    },
+    "offcial": {
+        "message": "插件官網"
+    },
+    "chromestore": {
+        "message": "應用商城"
+    },
+    "weibo": {
+        "message": "新浪微博"
+    },
+    "open": {
+        "message": "打開"
+    },
+    "donate": {
+        "message": "捐贈: "
+    },
+    "gotomy": {
+        "message": "或到我的博客，微博留言。"
+    },
+    "countrn": {
+        "message": "統計: 已經渲染"
+    },
+    "times": {
+        "message": "次"
+    }
+
+}

@@ -1,0 +1,20 @@
+url: http://cozhihu.w3cub.com
+APPID: oaoadbdcnpjngbdopghepdhlmlbdkgpb
+APPNAME: cozhihu
+extversion: v0.3.19
+
+
+disqus_short_name: w3cub
+
+google_analytics_tracking_id: UA-64597109-1
+
+exclude: 
+  - serve.sh
+  - deploy.sh
+  - Gemfile
+  - config.rb
+  
+
+
+sass:
+    style: compressed

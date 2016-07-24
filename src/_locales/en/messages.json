@@ -1,0 +1,61 @@
+{
+    "extDesc": {
+        "message": "Change your Zhihu page Color"
+    },
+    "extName": {
+        "message": "Cozhihu"
+    },
+    "textShadow": {
+        "message": "Use Text Shadow"
+    },
+    "rotateanimate": {
+        "message": "Disable Page focus animation"
+    },
+    "options": {
+        "message": "Options"
+    },
+    "openZhihuTab": {
+        "message": "Open Zhihu Website"
+    },
+   "openZhihuQuestion":{
+       "message": "Answer Question - Zhihu"
+   },
+    "openZhuanlanWriteTab": {
+        "message": "Write Zhihu Post"
+    },
+    "aboutAuthor": {
+        "message": "About author"
+    },
+    "feedback": {
+        "message": "Feedback"
+    },
+    "blog": {
+        "message": "Blog"
+    },
+   "offcial": {
+      "message": "Offcial Website"
+   },
+   "chromestore": {
+      "message": "Chrome Store"
+   },
+   "weibo": {
+      "message": "Weibo"
+   },
+   "open": {
+      "message": "Open "
+   },
+   "donate": {
+      "message": "Donate: "
+   },
+   "gotomy":{
+      "message": "or leave a message on my blog or weibo."
+   },
+   "countrn": {
+      "message": "Statistics: rendered "
+   },
+   "times": {
+      "message": " times"
+   }
+
+
+}

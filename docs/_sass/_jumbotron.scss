@@ -1,0 +1,70 @@
+// Jumbotron
+//
+// Modify Bootstrap's default `.jumbotron` styles.
+
+.jumbotron {
+  background-color: #384047;
+  // #3A95FF
+  // background-color: #f6f6f6;
+  border-bottom: 1px solid #eee;
+  color: #fff;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+
+  h1 {
+    color: #fff;
+    font-size: 60px;
+    margin-top: 10px;
+  }
+
+  .version {
+    color: #999;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+@media screen and (min-width: 768px){
+  .jumbotron {
+      padding-top: 90px;
+      padding-bottom: 90px;
+  }
+}
+
+.jumbotron-community{
+    background: url(../images/network-graphic.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.jumbotron-donate{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: url(../images/donate.png);
+}
+
+.jumbotron-help {
+    background: url(../images/hero-blue_help.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.jumbotron-custom {
+    background: url(../images/hero-desk.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}

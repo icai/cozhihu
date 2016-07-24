@@ -1,0 +1,42 @@
+{
+  "name": "cozhihu",
+  "private": true,
+  "version": "0.3.19",
+  "description": "zhi hu skins chrome extension",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cozhihu",
+    "zhihu",
+    "skins",
+    "theme"
+  ],
+  "author": "Terry Cai",
+  "license": "MIT",
+  "devDependencies": {
+    "crxautoreload": "^0.1.1",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.0.4",
+    "gulp-concat": "^2.6.0",
+    "gulp-crx-pack": "^1.0.1",
+    "gulp-css2jsmap": "^0.1.1",
+    "gulp-htmlmin": "^1.3.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-json-editor": "^2.2.1",
+    "gulp-jsonminify": "^1.0.0",
+    "gulp-multifile": "^0.2.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "~3.0.7",
+    "imagemin-gifsicle": "^4.2.0",
+    "imagemin-pngquant": "^4.2.2",
+    "run-sequence": "^1.2.1"
+  },
+  "dependencies": {
+    "lodash.template": "^4.2.5",
+    "object-assign": "~4.1.0"
+  }
+}

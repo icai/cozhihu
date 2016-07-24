@@ -1,0 +1,44 @@
+{
+    "background": {
+        "scripts": ["reload.js", "bg/background.js"]
+    },
+    "content_scripts": [{
+        "all_frames": true,
+        "js": ["content/colorstyle.js", "content/content.js"],
+        "matches": ["http://*/*", "https://*/*"],
+        "run_at": "document_start"
+    }],
+    
+    "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
+    "default_locale": "en",
+    "description": "__MSG_extDesc__",
+    "icons": {
+        "152": "icons/color/152.png",
+        "38": "icons/color/38.png"
+    },
+    "manifest_version": 2,
+    "name": "__MSG_extName__",
+    "options_page": "options.html",
+    // "page_action": {
+    //    "default_icon": "icon_19.png",
+    //    "default_popup": "popup/popup.html",
+    //    "default_title": "__MSG_extDesc__"
+    // },
+    "browser_action": {
+        "default_icon": "icons/color/19.png",
+        // "default_icon": { // optional
+        //     "19": "icon_19.png", // optional
+        //     "48": "icon_48.png" // optional
+        // },
+        "default_title": "__MSG_extDesc__", // optional; 
+        "default_popup": "popup/popup.html" // optional
+    },
+    "permissions": ["tabs", "contextMenus", "http://*/*", "https://*/*", "webRequest", "webRequestBlocking", "webNavigation"],
+
+    "version": "0.3.19",
+    "web_accessible_resources": [
+        "skins/*.css",
+        "images/*.png",
+        "icons/*/*.png"
+    ]
+}

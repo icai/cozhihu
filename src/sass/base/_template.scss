@@ -1,0 +1,158 @@
+a {
+    color: $anchor-color;
+}
+
+.zu-top {
+    background: $base-color;
+    border-bottom: 1px solid darken($base-color, 10%);
+}
+
+.zu-top-search-input {
+    background-color: mix(white, $base-color, 90%);
+    border: 1px solid $top-btn-border;
+}
+
+.zu-top-search-form .zu-top-search-button {
+    background: $top-btn-color;
+    border: 1px solid $top-btn-border;
+}
+
+.ac-active{
+    background-color: mix(white, $base-color, 90%);
+}
+
+.zu-top-add-question{
+    background: $top-btn-color;
+    border: 1px solid $top-btn-border;
+    &:active {
+       background: $top-btn-color-active; 
+       border: 1px solid $top-btn-border-active;
+    }
+}
+
+
+.zu-top-nav-li.current{
+	background: $top-nav-current;
+}
+
+.modal-dialog-title {
+	background: $modal-title;
+    border: 1px solid $modal-title-border;
+}
+
+
+.zg-btn-blue{
+    background: $primary-btn-color;
+    border: 1px solid $primary-btn-border;	
+    &:active{
+         background: darken($primary-btn-color, 3%);
+    }
+}
+
+.goog-buttonset-default{
+    background: $primary-btn-color;
+    border: 1px solid $primary-btn-border;
+}
+
+.zg-btn-green, .zg-btn-follow{
+	background: $follow-btn;
+}
+
+
+
+
+.zu-top-nav-userinfo.selected, html.no-touchevents .top-nav-profile:hover .zu-top-nav-userinfo {
+    background: $top-dropdown-color;
+}
+
+html.no-touchevents .top-nav-dropdown a:hover {
+    background-color: $top-dropdown-hover;
+}
+
+.top-nav-profile a {
+    background-color: $top-dropdown-color;
+}
+
+.top-nav-dropdown li a {
+    border-top: 1px solid $top-dropdown-border;
+}
+
+.ProfileProgress-completeness {
+    background: $profile-progress-bar;
+}
+
+.topics-plaza {
+    border: 1px solid $topics-plaza-border;
+    background: $topics-plaza-bg;
+}
+
+
+a.zu-main-feed-fresh-button{
+    border: 1px solid $topics-plaza-border;
+    background: $topics-plaza-bg;
+    &:hover,&:active{
+        border: 1px solid darken($topics-plaza-border, 1.5%);
+        background: darken($topics-plaza-bg, 1.5%);  
+    }
+}
+
+
+html.no-touchevents .zm-topic-cat-main li:hover a, .zm-topic-cat-main li.current a {
+    background: $topic-cat-color;
+    border-color: $topic-cat-color;
+}
+
+
+.zm-side-nav-link.active, 
+html.no-touchevents .zm-side-nav-link:hover{
+    color: $anchor-color;
+    background: mix(white, $base-color, 92%);
+}
+
+html.no-touchevents .SidebarListNav-itemLink:hover{
+    color: $anchor-color;
+    background: mix(white, $base-color, 92%);
+}
+
+
+html.no-touchevents .zh-summary:hover a.toggle-expand{
+    background: mix(white, $base-color, 92%);
+}
+
+.item-collapse.is-sticky{
+    background: mix(white, $base-color, 55%);
+}
+
+
+.zm-votebar .up, 
+.zm-votebar .down {
+    background: mix(white, $base-color, 92%);
+    color: mix(white, $base-color, 50%);
+}
+
+.zm-votebar .up .vote-arrow{
+    border-bottom-color: mix(white, $base-color, 50%);
+}
+.zm-votebar .down .vote-arrow{
+    border-top-color: mix(white, $base-color, 50%);
+}
+
+html.no-touchevents .zm-votebar .up:hover,
+html.no-touchevents .zm-votebar .down:hover,
+.zm-votebar .up.pressed, 
+.zm-votebar .down.pressed{
+    background: mix(white, $base-color, 50%);
+}
+
+.zm-item-vote-count{
+    background: mix(white, $base-color, 92%);
+    color: mix(white, $base-color, 50%);
+}
+
+html.no-touchevents .zm-item-vote-count:hover{
+    background: mix(white, $base-color, 50%);
+}
+
+.Link--light{
+    color: mix(white, $base-color, 50%);
+}

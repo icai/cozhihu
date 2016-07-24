@@ -1,0 +1,116 @@
+a {
+  color: #13512c; }
+
+.zu-top {
+  background: #1C7B42;
+  border-bottom: 1px solid #13512c; }
+
+.zu-top-search-input {
+  background-color: #e8f2ec;
+  border: 1px solid #186838; }
+
+.zu-top-search-form .zu-top-search-button {
+  background: #21924e;
+  border: 1px solid #186838; }
+
+.ac-active {
+  background-color: #e8f2ec; }
+
+.zu-top-add-question {
+  background: #21924e;
+  border: 1px solid #186838; }
+  .zu-top-add-question:active {
+    background: #1b753f;
+    border: 1px solid #114b28; }
+
+.zu-top-nav-li.current {
+  background: #166034; }
+
+.modal-dialog-title {
+  background: #1a733e;
+  border: 1px solid #186a39; }
+
+.zg-btn-blue {
+  background: #229650;
+  border: 1px solid #1b7740; }
+  .zg-btn-blue:active {
+    background: #1f8a4a; }
+
+.goog-buttonset-default {
+  background: #229650;
+  border: 1px solid #1b7740; }
+
+.zg-btn-green, .zg-btn-follow {
+  background: #8ab923; }
+
+.zu-top-nav-userinfo.selected, html.no-touchevents .top-nav-profile:hover .zu-top-nav-userinfo {
+  background: #166034; }
+
+html.no-touchevents .top-nav-dropdown a:hover {
+  background-color: #1d7f44; }
+
+.top-nav-profile a {
+  background-color: #166034; }
+
+.top-nav-dropdown li a {
+  border-top: 1px solid #155c31; }
+
+.ProfileProgress-completeness {
+  background: #25a558; }
+
+.topics-plaza {
+  border: 1px solid #a4cab3;
+  background: #f4f8f6; }
+
+a.zu-main-feed-fresh-button {
+  border: 1px solid #a4cab3;
+  background: #f4f8f6; }
+  a.zu-main-feed-fresh-button:hover, a.zu-main-feed-fresh-button:active {
+    border: 1px solid #9fc7af;
+    background: #eff5f2; }
+
+html.no-touchevents .zm-topic-cat-main li:hover a, .zm-topic-cat-main li.current a {
+  background: #13512c;
+  border-color: #13512c; }
+
+.zm-side-nav-link.active,
+html.no-touchevents .zm-side-nav-link:hover {
+  color: #13512c;
+  background: #edf4f0; }
+
+html.no-touchevents .SidebarListNav-itemLink:hover {
+  color: #13512c;
+  background: #edf4f0; }
+
+html.no-touchevents .zh-summary:hover a.toggle-expand {
+  background: #edf4f0; }
+
+.item-collapse.is-sticky {
+  background: #99c4aa; }
+
+.zm-votebar .up,
+.zm-votebar .down {
+  background: #edf4f0;
+  color: #8ebda1; }
+
+.zm-votebar .up .vote-arrow {
+  border-bottom-color: #8ebda1; }
+
+.zm-votebar .down .vote-arrow {
+  border-top-color: #8ebda1; }
+
+html.no-touchevents .zm-votebar .up:hover,
+html.no-touchevents .zm-votebar .down:hover,
+.zm-votebar .up.pressed,
+.zm-votebar .down.pressed {
+  background: #8ebda1; }
+
+.zm-item-vote-count {
+  background: #edf4f0;
+  color: #8ebda1; }
+
+html.no-touchevents .zm-item-vote-count:hover {
+  background: #8ebda1; }
+
+.Link--light {
+  color: #8ebda1; }
