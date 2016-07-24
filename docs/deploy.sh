@@ -2,6 +2,7 @@ cd _site
 if [ -d .git ]; then
   echo "inited"
 else
+  # echo $PWD
   git init
   git add -A
   git commit -m "site init"
