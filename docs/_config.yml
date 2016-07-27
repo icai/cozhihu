@@ -6,7 +6,7 @@ extversion: v0.3.19
 
 disqus_short_name: w3cub
 
-google_analytics_tracking_id: UA-64597109-1
+google_analytics_tracking_id: UA-78341631-1
 
 exclude: 
   - serve.sh
