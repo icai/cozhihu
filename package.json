@@ -1,7 +1,7 @@
 {
   "name": "cozhihu",
   "private": true,
-  "version": "0.3.19",
+  "version": "0.4.10",
   "description": "zhi hu skins chrome extension",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
