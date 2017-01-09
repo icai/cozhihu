@@ -35,7 +35,7 @@
     },
     "permissions": ["tabs", "contextMenus", "storage",  "http://*/*", "https://*/*", "webRequest", "webRequestBlocking", "webNavigation"],
 
-    "version": "0.4.10",
+    "version": "0.4.10.2",
     "web_accessible_resources": [
         "skins/*.css",
         "images/*.png",

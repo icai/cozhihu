@@ -31,7 +31,7 @@ var multifile = require('gulp-multifile');
  * @type {Object}
  */
 var config = {
-    version: "0.4.10"
+    version: "0.4.10.2"
 }
 
 /**

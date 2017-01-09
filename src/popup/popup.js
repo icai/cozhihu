@@ -7,14 +7,12 @@ function sendMsgToCS(message) {
         });
     });
 }
-var state = {};
 
-chrome.storage.local.get(null, function(data){
-    state = data || {};
-})
-
-function loadValue(name) {
-    return state[name];
+function loadValue(name, callback) {
+    chrome.storage.local.get(null, function(data){
+        data = data || {};
+        callback(data);
+    })
 }
 
 var domEvents = {
@@ -56,16 +54,19 @@ var domEvents = {
 function run() {
     document.addEventListener('DOMContentLoaded', function() {
         var divs = document.querySelectorAll('div');
-        var colorCode = loadValue('colorCode');
-        [].forEach.call(divs,function(div, index){ 
-            div.style.backgroundColor = div.id;
-            if(colorCode == div.getAttribute('data-name')){
-                div.classList.add('active');
-            }
-            div.addEventListener('click', domEvents.onClick);
-            div.addEventListener("mouseover", domEvents.onMouseover);
-        })
-        document.addEventListener("mouseout", domEvents.onMouseout);
+        loadValue('colorCode', function(data){
+            var colorCode = data.colorCode;
+            [].forEach.call(divs,function(div, index){ 
+                div.style.backgroundColor = div.id;
+                if(colorCode == div.getAttribute('data-name')){
+                    div.classList.add('active');
+                }
+                div.addEventListener('click', domEvents.onClick);
+                div.addEventListener("mouseover", domEvents.onMouseover);
+            })
+            document.addEventListener("mouseout", domEvents.onMouseout);
+            
+        });
     });
 }
 
