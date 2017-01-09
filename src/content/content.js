@@ -6,14 +6,7 @@ var textShadowStyle = "body{ text-shadow: 1px 1px 1px #ccc;}"
 
 // Loads color from background local storage
 function loadColor() {
-    chrome.runtime.sendMessage({
-        action: 'GET_COLOR'
-    }, function(response) {
-        if (response && response.colorCode) {
-            colorPage(response.colorCode);
-
-        }
-    });
+    colorPage(localStorageSnapshot.colorCode);
 }
 
 function updateStatistics(){
@@ -74,12 +67,12 @@ function loadCssStyle(cssText) {
     var style = document.createElement("style");
     style.type = "text/css";
     style.id = zhihuStyleChangeId;
-    document.getElementsByTagName("head")[0].appendChild(style);
     if (style.styleSheet) {
         style.styleSheet.cssText = cssText;
     } else {
         style.appendChild(document.createTextNode(cssText))
     }
+    document.getElementsByTagName("head")[0].appendChild(style);
 }
 
 
@@ -106,19 +99,7 @@ function log(message, exception) {
 
 // Loads value from localStorageSnapshot by name
 function loadValue(name) {
-    var lsStr;
-    if (lsStr = localStorageSnapshot['s_' + name]) {
-        return lsStr;
-    } else if (lsStr = localStorageSnapshot['n_' + name]) {
-        return parseFloat(lsStr);
-    } else if (lsStr = localStorageSnapshot['o_' + name]) {
-        return JSON.parse(lsStr);
-    } else if (lsStr = localStorageSnapshot['d_' + name]) {
-        return new Date(Date.parse(lsStr));
-    } else if (lsStr = localStorageSnapshot['b_' + name]) {
-        if (lsStr === 'false') lsStr = '';
-        return Boolean(lsStr);
-    }
+    return localStorageSnapshot[name];
 }
 
 
@@ -130,23 +111,17 @@ function endsWith(string, suffix) {
 
 // Sends message to bg to get data
 function runClientServiceCommand() {
-    // Request extension consts from background
-    chrome.runtime.sendMessage({
-        action: 'GET_BG_DATA',
-        url: window.location.href,
-        domain: window.location.hostname
-    }, function(msg) {
-        if (!msg) return;
-        // executed on pageload
-        if (msg.action === 'BG_DATA') {
-            extensionConsts = msg.extensionConsts;
-            localStorageSnapshot = msg.localStorageSnapshot;
 
-            runExtensionSpecificCs();
-        }
+    chrome.storage.local.get(null, function(data){
+        localStorageSnapshot = data || {};
+        extensionConsts = data.extensionConsts || {};
+
+        runExtensionSpecificCs();
     });
 }
 
+
 try {
+
     runClientServiceCommand();
 } catch (e) {}

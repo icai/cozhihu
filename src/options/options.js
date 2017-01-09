@@ -135,17 +135,19 @@ function renderBackground() {
 
 
 function resetStatus(){
-    if (localStorage["b_usetextshadow"] && localStorage["b_usetextshadow"] === "true")
-        document.getElementById('usetextshadow').checked = true;
+    chrome.storage.local.get(null, function(data){
+        if (data["usetextshadow"] && data["usetextshadow"] === "true")
+            document.getElementById('usetextshadow').checked = true;
 
 
-    if (localStorage["b_disablerotation"] && localStorage["b_disablerotation"] === "true")
-        document.getElementById('disablerotation').checked = true;
+        if (data["disablerotation"] && data["disablerotation"] === "true")
+            document.getElementById('disablerotation').checked = true;
 
 
-    if(localStorage["n_renderCount"]){
-        document.getElementById('rendercount').innerHTML = localStorage["n_renderCount"];
-    }
+        if(data["renderCount"]){
+            document.getElementById('rendercount').innerHTML = data["renderCount"];
+        }
+    })
 }
 
 function addEvent(el, event, callback){

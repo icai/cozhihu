@@ -48,50 +48,16 @@ function getTypeName(obj, toLower) {
 
 // Loads value from local storage by property name
 function loadValue(name) {
-    if (typeof state[name] == 'undefined') {
-
-        var lsStr;
-        if (lsStr = localStorage['s_' + name]) {
-            state[name] = lsStr;
-        } else if (lsStr = localStorage['n_' + name]) {
-            state[name] = parseFloat(lsStr);
-        } else if (lsStr = localStorage['o_' + name]) {
-            state[name] = JSON.parse(lsStr);
-        } else if (lsStr = localStorage['d_' + name]) {
-            state[name] = new Date(Date.parse(lsStr));
-        } else if (lsStr = localStorage['b_' + name]) {
-            if (lsStr === 'false') lsStr = '';
-            state[name] = Boolean(lsStr);
-        }
-    }
     return state[name];
 }
 
 
 // Keeps the value in both state object and local storage
 function persistValue(name, value) {
-    var type = getTypeName(value, true);
-    var codedName = name;
-    if (type == 'object') {
-        codedName = 'o_' + name;
-        localStorage[codedName] = JSON.stringify(state[name] = value);
-    } else {
-        switch (type) {
-            case 'string':
-                codedName = 's_' + name;
-                break;
-            case 'number':
-                codedName = 'n_' + name;
-                break;
-            case 'date':
-                codedName = 'd_' + name;
-                break;
-            case 'boolean':
-                codedName = 'b_' + name;
-                break;
-        }
-        localStorageSnapshot[codedName] = localStorage[codedName] = state[name] = value;
-    }
+    var sets = {};
+    sets[name] = value;
+    chrome.storage.local.set(sets);
+    localStorageSnapshot[name] =  state[name] = value;
 }
 
 
@@ -127,18 +93,19 @@ function updateStatistics(type) {
 // Fill extension storage snapshot object for content scripts
 function initExtensionStorageSnapshot() {
     var value;
-    Object.keys(localStorage).forEach(function(k) {
-        value = localStorage[k];
-        if (value.indexOf('o_') === 0) return;
-        localStorageSnapshot[k] = value;
-    });
+    chrome.storage.local.get(null, function(data){
+        localStorageSnapshot = data || {};
+    })
 }
 
 
 
 // Remove old local storage properties
 function cleanOldLocalStorageProperties() {
-    // localStorage.removeItem();
+    // console.info(localStorage);
+    chrome.storage.local.clear();
+    localStorage.clear();
+    chrome.storage.local.set({extensionConsts: extensionConsts});
 }
 
 
@@ -254,10 +221,10 @@ function registerRunTimeEventListeners() {
         } catch (e) {}
         switch (details.reason) {
             case 'update':
-                persistValue("updateDate", new Date());
+                persistValue("updateDate", new Date().getTime());
                 break;
             case 'install':
-                persistValue("installDate", new Date());
+                persistValue("installDate", new Date().getTime());
                 openInstallPage();
                 break;
         }
@@ -267,17 +234,6 @@ function registerRunTimeEventListeners() {
             if (!request) return;
 
             switch (request.action) {
-                case 'GET_BG_DATA':
-                    if (sender.tab)
-                        sendResponse({
-                            action: "BG_DATA",
-                            extensionConsts: extensionConsts,
-                            localStorageSnapshot: localStorageSnapshot
-                        });
-                    else {
-                        log('no loaded content config to supply to the content scripts');
-                    }
-                    break;
                 case 'TRACK_EVENT':
                     break;
                 case 'PERSIST_VALUE':
@@ -295,14 +251,9 @@ function registerRunTimeEventListeners() {
     chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         switch (request.action) {
             case 'COLOR_SELECTED_FROM_POPUP':
-                if (extensionConsts.colorPersistence) {
-                    persistValue("colorCode", request.color);
-                    updateStatistics("renderCount");
-                    sendGa('send', 'event', { eventCategory: 'Color', eventAction: 'click', eventLabel: 'Click Color:' + request.color})
-                }
-                break;
-            case 'GET_COLOR':
-                sendResponse({ colorCode: loadValue("colorCode") });
+                persistValue("colorCode", request.color);
+                updateStatistics("renderCount");
+                sendGa('send', 'event', { eventCategory: 'Color', eventAction: 'click', eventLabel: 'Click Color:' + request.color})
                 break;
         }
     });

@@ -8,23 +8,12 @@ function sendMsgToCS(message) {
     });
 }
 var state = {};
-function loadValue(name) {
-    if (typeof state[name] == 'undefined') {
 
-        var lsStr;
-        if (lsStr = localStorage['s_' + name]) {
-            state[name] = lsStr;
-        } else if (lsStr = localStorage['n_' + name]) {
-            state[name] = parseFloat(lsStr);
-        } else if (lsStr = localStorage['o_' + name]) {
-            state[name] = JSON.parse(lsStr);
-        } else if (lsStr = localStorage['d_' + name]) {
-            state[name] = new Date(Date.parse(lsStr));
-        } else if (lsStr = localStorage['b_' + name]) {
-            if (lsStr === 'false') lsStr = '';
-            state[name] = Boolean(lsStr);
-        }
-    }
+chrome.storage.local.get(null, function(data){
+    state = data || {};
+})
+
+function loadValue(name) {
     return state[name];
 }
 
