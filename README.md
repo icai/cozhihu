@@ -1,4 +1,4 @@
-#cozhihu(多彩知乎)
+# cozhihu(多彩知乎)
 ---
 
 
@@ -24,7 +24,7 @@
 <img aria-hidden="true" class="h-A-Ce-ze-Yf A-Ce-ze-Yf" src="https://lh3.googleusercontent.com/Q9-jyFEiolQrCY9WHREouUwbN4i5gcDGy-xw3xFbFii5Ea8S1ezuRM2IQwuLhCOYNZgntdqFcfI=s640-h400-e365-rw" width="640px" height="400px" >
 
 
-###License
+### License
 
 Copyright (c) 2016 Terry Cai. Licensed under the MIT license.
 
